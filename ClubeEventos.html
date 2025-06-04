@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Clube de Eventos</title>
+  <style>
+    body { font-family: Arial; margin: 0; }
+    header, footer {
+      background: #333; color: #fff;
+      text-align: center; padding: 15px;
+    }
+    nav a {
+      color: #fff; margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      display: flex; padding: 20px;
+    }
+    main { flex: 3; }
+    aside {
+      flex: 1; background: #f0f0f0;
+      padding: 15px; margin-left: 20px;
+    }
+    section { margin-bottom: 30px; }
+    table, th, td {
+      border: 1px solid #aaa;
+      border-collapse: collapse;
+      padding: 8px; text-align: center;
+    }
+    .event-day { background: yellow; }
+    ul { list-style: none; padding-left: 0; }
+    a { text-decoration: none; color: #0066cc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Clube de Eventos</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#calendario">Calendário</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="container">
+  <main>
+    <section id="eventos">
+      <h2>Eventos Futuros</h2>
+      <p><strong>12/06 - Workshop de Programação</strong><br>
+      Local: Auditório Central<br>
+      Tema: lógica e prática de programação</p>
+
+      <p><strong>22/06 - Encontro de Startups</strong><br>
+      Local: Espaço InovaTech<br>
+      Tema: networking e inovação</p>
+    </section>
+
+    <section id="calendario">
+      <h2>Calendário - Junho</h2>
+      <table>
+        <tr><th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th></tr>
+        <tr><td></td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td class="event-day">12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td class="event-day">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+      </table>
+    </section>
+
+    <section id="noticias">
+      <h2>Notícias</h2>
+      <p><strong>01/06 - Lançamento do novo site!</strong><br>
+      O Clube de Eventos agora tem uma nova plataforma para divulgação e participação dos encontros!</p>
+
+      <p><strong>30/05 - Nova parceria com InovaTech</strong><br>
+      Novos espaços e eventos confirmados para o segundo semestre de 2025.</p>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Links Úteis</h3>
+    <ul>
+      <li><a href="https://www.instagram.com/clubeeventos" target="_blank">Instagram</a></li>
+      <li><a href="https://wa.me/5591999999999" target="_blank">WhatsApp</a></li>
+      <li><a href="mailto:contato@clubeeventos.com">E-mail</a></li>
+      <li><a href="https://www.sympla.com.br" target="_blank">Sympla (Ingressos)</a></li>
+      <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+    </ul>
+  </aside>
+</div>
+
+<footer id="contato">
+  <p>&copy; 2025 Clube de Eventos | Todos os direitos reservados</p>
+  <p><a href="mailto:contato@clubeeventos.com">contato@clubeeventos.com</a> | 
+     <a href="https://wa.me/5591999999999" target="_blank">(91) 99999-9999</a></p>
+  <p>Siga-nos no <a href="https://www.instagram.com/clubeeventos" target="_blank">Instagram</a></p>
+</footer>
+
+</body>
+</html>
